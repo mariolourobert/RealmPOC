@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RealmPOC</string>
+
+    <string-array name="class_spinner">
+        <item>Guerrier</item>
+        <item>Assassin</item>
+        <item>Magicien</item>
+        <item>Archer</item>
+        <item>Guerisseur</item>
+    </string-array>
+
+</resources>

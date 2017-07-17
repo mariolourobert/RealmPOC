@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        tools:context="fr.louprod.testrealm.MainActivity">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/violet"
+            android:elevation="4dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/Base.TextAppearance.AppCompat.Display1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="60dp"
+                android:text="Realm POC"
+                android:textColor="@android:color/white" />
+
+            <android.support.v7.widget.AppCompatTextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="105dp"
+                android:text="Mario Lou Robert"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liste des persos :"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="67dp"
+            android:layout_above="@+id/scrollView2"
+            android:layout_centerHorizontal="true" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/scrollView2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/v_main_liste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="29dp"
+                    android:minLines="2"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:singleLine="false"
+                    android:text="Aucuns persos"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.20999998" />
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/b_main_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter Perso"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="356dp"
+            android:layout_below="@+id/frameLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+
+</layout>

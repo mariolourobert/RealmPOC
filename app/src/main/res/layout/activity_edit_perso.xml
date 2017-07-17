@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="fr.louprod.testrealm.MainActivity">
+
+        <EditText
+            android:id="@+id/i_edit_perso_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="117dp"
+            android:layout_marginTop="76dp"
+            android:layout_below="@+id/b_edit_perso_valid"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/i_edit_perso_spinner_class"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="243dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/b_edit_perso_valid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/violet"
+            android:text="Valider"
+            android:textColor="#EEEEEE"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/b_edit_perso_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/b_edit_perso_valid"
+            android:layout_alignBottom="@+id/b_edit_perso_valid"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:backgroundTint="@color/violet"
+            android:text="Retour"
+            android:textColor="#EEEEEE"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </RelativeLayout>
+
+
+</layout>
