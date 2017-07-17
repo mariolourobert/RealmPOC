@@ -45,8 +45,9 @@
             android:text="Liste des persos :"
             tools:layout_editor_absoluteX="138dp"
             tools:layout_editor_absoluteY="67dp"
-            android:layout_above="@+id/scrollView2"
-            android:layout_centerHorizontal="true" />
+            android:layout_below="@+id/b_main_add"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -54,7 +55,8 @@
             android:id="@+id/scrollView2"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2">
 
             <LinearLayout
                 android:layout_width="match_parent"
